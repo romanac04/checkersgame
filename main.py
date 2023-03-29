@@ -1,7 +1,7 @@
 
 from checkers import build_board, get_count, resize_board, pivot_board
-
-board = build_board(3)
+size = int(input("Enter board size between 4 and 16. "))
+board = build_board(size)
 new_board = resize_board(board, 5)
 pivoted_board = pivot_board(board)
 print(board)

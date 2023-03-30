@@ -10,9 +10,6 @@ def get_count(board, item):
                 if cell == item:
                     count += 1
         return count
-if __name__ == "__main__":
-        print("This file is not intended to be run as a main.")
-
 def resize_board(board, new_size):
     board = np.resize(board, (new_size, new_size))
     return board
@@ -20,3 +17,8 @@ def resize_board(board, new_size):
 def pivot_board(board):
     pivoted_board = np.transpose(board)
     return pivoted_board
+
+if __name__ == "__main__":
+        print("This file is not intended to be run as a main.")
+
+

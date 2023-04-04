@@ -3,7 +3,8 @@ from checkers import build_board, get_count, resize_board, pivot_board
 def game():
     size = int(input("Enter board size between 4 and 16. "))
     board = build_board(size)
-    new_board = resize_board(board, 5)
+    new_size = int(input("Enter a new board size between 4 and 16 "))
+    new_board = resize_board(board, new_size)
     pivoted_board = pivot_board(board)
     print(board)
     print(" ")
